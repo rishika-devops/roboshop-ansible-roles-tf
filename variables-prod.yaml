@@ -1,0 +1,11 @@
+MONGODB_HOST: mongodb-prod.sowjanyaaws.online
+CATALOGUE_HOST: catalogue-prod.sowjanyaaws.online
+REDIS_HOST: redis-prod.sowjanyaaws.online
+CART_HOST: cart-prod.sowjanyaaws.online
+USER_HOST: user-prod.sowjanyaaws.online
+MYSQL_HOST: mysql-prod.sowjanyaaws.online
+SHIPPING_HOST: shipping-prod.sowjanyaaws.online
+RABBITMQ_HOST: rabbitmq-prod.sowjanyaaws.online
+PAYMENT_HOST: payment-prod.sowjanyaaws.online
+DISPATCH_HOST: dispatch-prod.sowjanyaaws.online
+WEB_HOST: web-prod.sowjanyaaws.online
