@@ -7,7 +7,7 @@
     state: directory
 - name: "download {{component}} code from nexus"
   ansible.builtin.get_url:
-    url: "http://{{ lookup('env', 'admin') }}:{{ lookup('env', 'sowji123') }}@18.232.92.67:8081/repository/catalogue/com/roboshop/catalogue/{{ app_version }}/catalogue-{{ app_version }}.zip"
+    url: "{{NEXUS_URL}}/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
     dest: /tmp
 - name: unzipping code in app directory
   ansible.builtin.unarchive:
