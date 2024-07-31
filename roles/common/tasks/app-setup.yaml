@@ -9,11 +9,6 @@
   ansible.builtin.get_url:
     url: "{{NEXUS_URL}}/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
     dest: /tmp
-    mode: '0644'
-    headers:
-      Authorization: "Basic {{ nexus_auth }}"
-  vars:
-    nexus_auth: "{{ lookup('env', 'NEXUS_USER') | admin }}:{{ lookup('env', 'NEXUS_PASS') | sowji123 }}"
 - name: unzipping code in app directory
   ansible.builtin.unarchive:
     src: "/tmp/{{component}}-{{app_version}}.zip"
