@@ -9,6 +9,10 @@
   ansible.builtin.get_url:
     url: "{{NEXUS_URL}}/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
     dest: /tmp
+    headers:
+      Authorization: "Basic {{ 'admin:sowji123' | b64encode }}"
+  register: download_result
+
 - name: unzipping code in app directory
   ansible.builtin.unarchive:
     src: "/tmp/{{component}}-{{app_version}}.zip"
