@@ -9,3 +9,5 @@ RABBITMQ_HOST: rabbitmq-prod.sowjanyaaws.online
 PAYMENT_HOST: payment-prod.sowjanyaaws.online
 DISPATCH_HOST: dispatch-prod.sowjanyaaws.online
 WEB_HOST: web-prod.sowjanyaaws.online
+NEXUS_URL: http://35.168.18.196:8081/repository
+group_id: "com/roboshop"
